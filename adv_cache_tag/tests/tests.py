@@ -12,7 +12,8 @@ from django.utils.safestring import SafeText
 
 from django import VERSION as django_version
 from django.test.utils import override_settings
-from django.utils.http import urlquote
+# from django.utils.http import 
+from urllib.parse import quote as urlquote
 
 from adv_cache_tag.compat import get_cache, template
 from adv_cache_tag.tag import CacheTag
